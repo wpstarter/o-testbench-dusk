@@ -158,7 +158,7 @@ abstract class TestCase extends Testbench
      */
     protected function resolveApplication()
     {
-        return tap(new Application($this->getBasePath()), function ($app) {
+        return ws_tap(new Application($this->getBasePath()), function ($app) {
             $app->bind(
                 'WpStarter\Foundation\Bootstrap\LoadConfiguration',
                 Bootstrap\LoadConfiguration::class

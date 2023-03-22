@@ -20,7 +20,7 @@ class RouteTest extends TestCase
         }]);
 
         $app['router']->get('config', ['as' => 'hi', 'uses' => function () {
-            return config('new_config_item');
+            return ws_config('new_config_item');
         }]);
     }
 
@@ -52,7 +52,7 @@ class RouteTest extends TestCase
             $config->set('new_config_item', 'Fantastic!');
         });
 
-        $this->assertEquals('Fantastic!', config('new_config_item'));
+        $this->assertEquals('Fantastic!', ws_config('new_config_item'));
 
         $this->browse(function (Browser $browser, Browser $browserTwo) {
             $browser->visit('config')

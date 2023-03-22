@@ -161,7 +161,7 @@ class DuskServer
      */
     protected function guardServerStarting()
     {
-        $socket = rescue(function () {
+        $socket = ws_rescue(function () {
             $errorNumber = 0;
             $errorString = '';
             $timeout = 1;

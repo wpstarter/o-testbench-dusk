@@ -15,7 +15,7 @@ class AuthTest extends TestCase
      */
     protected function defineDatabaseMigrations()
     {
-        $this->loadLaravelMigrations(config('database.default'));
+        $this->loadLaravelMigrations(ws_config('database.default'));
     }
 
     /** @test */
