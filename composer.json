@@ -1,0 +1,60 @@
+{
+    "name": "wpstarter/testbench-dusk",
+    "description": "Laravel Dusk Testing Helper for Packages Development",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "As247",
+            "email": "as247@wpstarter.dev",
+            "homepage": "https://github.com/wpstarter"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Orchestra\\Testbench\\Dusk\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Orchestra\\Testbench\\Dusk\\Tests\\": "tests/"
+        }
+    },
+    "bin": [
+        "testbench-dusk"
+    ],
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "konsulting/project-root": "^1.1",
+        "laravel/dusk": "^6.22.1",
+        "opis/closure": "^3.6",
+        "laravel/serializable-closure": "^1.0",
+        "orchestra/dusk-updater": "^1.5 || ^2.0",
+        "wpstarter/testbench": "^1.0",
+        "php-webdriver/webdriver": "^1.9"
+    },
+    "require-dev": {
+
+    },
+    "extra": {
+
+    },
+    "scripts": {
+        "prepare": "@composer run post-autoload-dump",
+        "test": [
+            "@php create-sqlite-db",
+            "@php vendor/bin/phpunit -c ./ --color"
+        ],
+        "post-autoload-dump": [
+            "@php testbench-dusk package:discover --ansi",
+            "@php vendor/bin/dusk-updater detect --auto-update"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}
