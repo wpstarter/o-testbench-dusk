@@ -11,13 +11,13 @@ class ResolvesProjectRootTest extends PHPUnitTestCase
     public function it_finds_the_correct_path_for_the_browser_tests()
     {
         $this->assertEquals(
-            '/home/person/code/testbench-dusk/tests/Browser',
-            (new DummyTestCase())->resolveBrowserTestsPath('/home/person/code/testbench-dusk/src')
+            '/home/person/code/o-testbench-dusk/tests/Browser',
+            (new DummyTestCase())->resolveBrowserTestsPath('/home/person/code/o-testbench-dusk/src')
         );
 
         $this->assertEquals(
             '/home/person/code/project/tests/Browser',
-            (new DummyTestCase())->resolveBrowserTestsPath('/home/person/code/project/vendor/orchestra/testbench-dusk/src')
+            (new DummyTestCase())->resolveBrowserTestsPath('/home/person/code/project/vendor/orchestra/o-testbench-dusk/src')
         );
     }
 }
