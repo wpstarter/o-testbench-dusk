@@ -8,7 +8,6 @@
 /src/tests/Browser/screenshots/*
 /tests/Browser/console/*
 /tests/Browser/screenshots/*
-/tmp/*
 
 # Laravel Stubs
 /laravel/vendor
