@@ -32,7 +32,7 @@
         "wpstarter/dusk": "^1.0",
         "opis/closure": "^3.6",
         "laravel/serializable-closure": "^1.0",
-        "wpstarter/o-dusk-updater": "^1.0",
+        "wpstarter/o-dusk-updater": "^1.1",
         "wpstarter/o-testbench": "^1.0",
         "php-webdriver/webdriver": "^1.9"
     },
