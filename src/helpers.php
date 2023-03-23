@@ -13,7 +13,7 @@ use Laravel\Dusk\Browser;
  */
 function find_test_directory($path = __DIR__): string
 {
-    return ProjectRoot::forPackage('testbench-dusk')->resolve($path).'/tests/Browser';
+    return ProjectRoot::forPackage('o-testbench-dusk')->resolve($path).'/tests/Browser';
 }
 
 /**
