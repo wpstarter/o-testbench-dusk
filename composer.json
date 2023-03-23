@@ -1,5 +1,5 @@
 {
-    "name": "wpstarter/testbench-dusk",
+    "name": "wpstarter/o-testbench-dusk",
     "description": "Laravel Dusk Testing Helper for Packages Development",
     "type": "library",
     "license": "MIT",
@@ -32,8 +32,8 @@
         "wpstarter/dusk": "^1.0",
         "opis/closure": "^3.6",
         "laravel/serializable-closure": "^1.0",
-        "orchestra/dusk-updater": "^1.5 || ^2.0",
-        "wpstarter/testbench": "^1.0",
+        "wpstarter/o-dusk-updater": "^1.0",
+        "wpstarter/o-testbench": "^1.0",
         "php-webdriver/webdriver": "^1.9"
     },
     "require-dev": {
