@@ -50,7 +50,7 @@ jobs:
       - name: Create database
         run: php ./create-sqlite-db
       - name: Start Chrome Driver
-        run: vendor/laravel/dusk/bin/chromedriver-linux &
+        run: vendor/wpstarter/dusk/bin/chromedriver-linux &
       - name: Execute tests
         run: vendor/bin/phpunit
       - name: Upload Failed Screenshots
@@ -105,7 +105,7 @@ jobs:
       - name: Create database
         run: php ./create-sqlite-db
       - name: Start Chrome Driver
-        run: vendor/laravel/dusk/bin/chromedriver-linux &
+        run: vendor/wpstarter/dusk/bin/chromedriver-linux &
       - name: Execute tests
         run: vendor/bin/phpunit
       - name: Upload Failed Screenshots
